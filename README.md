@@ -87,6 +87,7 @@ En el feedback recibido por mis compañeras, hice unos cambios al prototipo que 
 
 #### Pantalla Secundaria
 
-![image](https://user-images.githubusercontent.com/42952494/58849588-7cc06500-8650-11e9-8135-33785904a960.png)
+![image](https://user-images.githubusercontent.com/42952494/59002419-f59df900-87d7-11e9-8c99-4dd0304114d9.png)
 
 
+[Planificación](https://docs.google.com/document/d/129CFxOnSS5su-ODmH_cJuvEJvChaBAxg9iBhR81HNxI/)

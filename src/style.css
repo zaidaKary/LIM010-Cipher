@@ -1,1 +1,130 @@
-/* Acá van tus reglas de estilo */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+h2 {
+    text-align: center;
+}
+#pantallaPrincipal {
+    text-align: center;
+}
+.imagenjuego {
+    width: 500px;
+    height: 250px;
+    display:block;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.imagencand {
+    width: 50px;
+    height: 50px;
+    position: absolute; 
+    top: 457px; 
+    left: 550px;
+}
+.imagencand2 {
+    width: 30px;
+    height: 30px;
+    position: left; 
+}
+.botonIngreso {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    margin-bottom: 70px;
+}
+
+.botonIngreso:hover {
+    background-color: rgb(0, 255, 128);
+}
+footer {
+    text-align: right;
+    font-size:17px;
+}
+textarea {
+    border-radius: 5px;
+    border: 3px solid rgb(208, 230, 12);
+    box-shadow: 1px 1px 1px #999;
+    text-align: left;
+}
+.botonDC {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(15, 0, 220, 0.795);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.botonDC:hover {
+    background-color: rgba(0, 132, 255, 0.911);
+}
+.botonLimpiar {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(244, 248, 4, 0.911);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.botonLimpiar:hover {
+    background-color: rgba(250, 144, 6, 0.911);
+}
+.texto {
+    font-size:17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.mensajeError {
+    font-size:25px;
+    font-family: cursive;
+}
+.byZS {
+    font-family: 'Playball', cursive;
+    font-size:20px;
+}
+.hide {
+    display: none;
+}
+input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imagenTriste{
+    width: 300px;
+    height: 300px;
+    display:block;
+    margin:auto;
+    margin-top: 35px;
+}
