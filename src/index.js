@@ -29,7 +29,7 @@ botonIngresar.addEventListener('click', () => {
             pantallaPrincipal.classList.add('hide');
             pantallaError.classList.remove('hide');
         }else{
-            //document.getElementById('ventanaContrasenhaInco').classList.add('ventanaError');
+           // document.getElementById('ventanaContrasenhaInco').classList.add('ventanaError');
             //document.getElementById('ventanaContrasenhaInco').innerHTML = "Contraseña incorrecta...";
             alert("Contraseña incorrecta, vuelve a intentar");
             contrasenha.value = "";
