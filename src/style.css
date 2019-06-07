@@ -128,3 +128,61 @@ input {
     margin:auto;
     margin-top: 35px;
 }
+/*Para quitar los botones del input numero*/
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+
+    -moz-appearance:textfield;
+
+}
+/*Fin del boton*/
+/*Viñeta de tooltip*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+  }
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+/*Fin de tooltip*/
+.ventanaError{
+    background: rgba(255, 255, 255, .6);
+    width: 30%;
+    color: rgba(0, 0, 0, .6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 250px;
+    border-radius: 22px;
+    display: none;
+}
