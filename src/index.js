@@ -1,7 +1,5 @@
 //guardando valores
 const contrasenha = document.getElementById('contrasenha');
-const textoIntroducido = document.getElementById('textoDC');
-const textoClave = document.getElementById('clave');
 
 //vistas
 const pantallaPrincipal = document.getElementById('pantallaPrincipal');
@@ -31,46 +29,67 @@ botonIngresar.addEventListener('click', () => {
             pantallaPrincipal.classList.add('hide');
             pantallaError.classList.remove('hide');
         }else{
+            //document.getElementById('ventanaContrasenhaInco').classList.add('ventanaError');
+            //document.getElementById('ventanaContrasenhaInco').innerHTML = "Contraseña incorrecta...";
             alert("Contraseña incorrecta, vuelve a intentar");
             contrasenha.value = "";
             contador++;
         }
     }
-    
     //Limpia los textArea
-    document.getElementById('textoDC').value = "";
-    document.getElementById('resultadoDC').value = "";
+    //document.getElementById('textoDC').value = "";
+    //document.getElementById('resultadoDC').value = "";
 });
 
 //funcionalidad del boton CIFRAR
 botonCifrar.addEventListener('click', () => {
+    const textoIntroducido = document.getElementById('textoDC').value;
+    const textoClave = parseInt(document.getElementById('clave').value);
+    let resultado = " ";
 
-    const resultado = document.getElementById('resultadoDC');
-
-      for (var i = 0; i < textoIntroducido.length; i++) {
-        var c = textoIntroducido.charCodeAt(i);
-        if (65 <= numLetraAscii && numLetraAscii <=  90){
-            resultado += String.fromCharCode((numLetraAscii - 65 + textoClave) % 26 + 65).charCodeAt(0);  
+      for (let i = 0; i < textoIntroducido.length; i++) {
+        let numLetraAscii = textoIntroducido.charCodeAt(i);
+        if (65 <= numLetraAscii && numLetraAscii <=  90){ //código ascii para las mayúsculas
+            resultado += String.fromCharCode((numLetraAscii - 65 + textoClave) % 26 + 65);  
         }
-        else if (97 <= numLetraAscii && numLetraAscii <= 122){
-        resultado += String.fromCharCode((numLetraAscii - 97 + textoClave) % 26 + 97).charCodeAt(0);  
+        else if (97 <= numLetraAscii && numLetraAscii <= 122){ //código ascii para las minúsculas
+        resultado += String.fromCharCode((numLetraAscii - 97 + textoClave) % 26 + 97);  
         }else{
-        resultado += textoIntroducido.charAt(i);  
+        resultado += textoIntroducido.charAt(i); //devuelve el mismo valor introducido, si es espacio 
+        //o número, es el mismo valor.
         }
       }
-      return resultado;
+      console.log(resultado);
+      document.getElementById('resultadoDC').value = resultado.toUpperCase();
+
 });
 
 //funcionalidad del boton DESCIFRAR
 botonDescifrar.addEventListener('click', () => {
+    const textoIntroducido = document.getElementById('textoDC').value;
+    const textoClave = parseInt(document.getElementById('clave').value);
+    let resultado = " ";
 
+      for (let i = 0; i < textoIntroducido.length; i++) { //código ascii para las mayúsculas
+        let numLetraAscii = textoIntroducido.charCodeAt(i);
+        if (65 <= numLetraAscii && numLetraAscii <=  90){
+            resultado += String.fromCharCode((numLetraAscii - 65 - textoClave) % 26 + 65);  
+        }
+        else if (97 <= numLetraAscii && numLetraAscii <= 122){ //código ascii para las minúsculas
+        resultado += String.fromCharCode((numLetraAscii - 97 - textoClave) % 26 + 97);  
+        }else{
+        resultado += textoIntroducido.charAt(i);  
+        }
+      }
+      console.log(resultado);
+      document.getElementById('resultadoDC').value = resultado;
 });
 
 //funcionalidad del boton LIMPIAR
 botonLimpiar.addEventListener('click', () => {
     document.getElementById('textoDC').value = "";
-    document.getElementById('resultadoDC').value = "";
     document.getElementById('clave').value = "";
+    document.getElementById('resultadoDC').value = " ";
 });
 
 //funcionalidad del boton SALIR
@@ -79,4 +98,7 @@ botonSalir.addEventListener('click', () => {
     pantallaPrincipal.classList.remove('hide');
     document.getElementById('contrasenha').value = "";
     contador = 0;
+    document.getElementById('textoDC').value = "";
+    document.getElementById('clave').value = "";
+    document.getElementById('resultadoDC').value = "";
 });
