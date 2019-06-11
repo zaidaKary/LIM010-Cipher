@@ -1,12 +1,16 @@
 h1 {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 70px;
     font-family: 'Permanent Marker', cursive;
 }
 h2 {
     text-align: center;
+}
+body{
+    background-image: url(img/fondoJuego.jpg);
+    background-size: cover;
 }
 #pantallaPrincipal {
     text-align: center;
@@ -19,11 +23,8 @@ h2 {
     margin-bottom: 30px;
 }
 .imagencand {
-    width: 50px;
-    height: 50px;
-    position: absolute; 
-    top: 457px; 
-    left: 550px;
+    width: 45px;
+    height: 45px;
 }
 .imagencand2 {
     width: 30px;
@@ -54,7 +55,10 @@ h2 {
 }
 footer {
     text-align: right;
-    font-size:17px;
+    font-size: 20px;
+    font-family: 'Playball', cursive;
+    margin-right: 0%;
+    margin-top: 25%;   
 }
 textarea {
     border-radius: 5px;
@@ -110,23 +114,20 @@ textarea {
     font-size:25px;
     font-family: cursive;
 }
-.byZS {
-    font-family: 'Playball', cursive;
-    font-size:20px;
-}
 .hide {
     display: none;
 }
-input {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.inputText {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
 }
 .imagenTriste{
     width: 300px;
     height: 300px;
     display:block;
     margin:auto;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 /*Para quitar los botones del input numero*/
 input[type=number]::-webkit-outer-spin-button,
@@ -141,48 +142,25 @@ input[type=number] {
 
 }
 /*Fin del boton*/
-/*Viñeta de tooltip*/
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+/*Arreglando la pantalla contraseña*/
+.formContrasenha{
     position: absolute;
-    z-index: 1;
-    top: -5px;
-    left: 110%;
-  }
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent black transparent transparent;
-  }
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
-/*Fin de tooltip*/
-.ventanaError{
-    background: rgba(255, 255, 255, .6);
-    width: 30%;
-    color: rgba(0, 0, 0, .6);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: center;
-    padding: 33px;
-    min-height: 250px;
-    border-radius: 22px;
-    display: none;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 310px;
+    height: 260px;
+    box-sizing: border-box;
+    background: rgb(0, 0,0, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*boton copiar*/
+.em-clipboard{
+float: right;
+background-color: rgba(7, 7, 0, 0.911);
+width: 40px;
+height: 40px;
 }

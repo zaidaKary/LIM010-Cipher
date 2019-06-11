@@ -6,25 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Playball|Roboto+Condensed|Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body background="img/fondoCeleste.jpg">
+<body>
     <header>
         <h1>DescripGame</h1>
         <img class="imagenjuego" src="img/imagenJuego.gif" alt="EnCrIpTaNdOaMiX" />
     </header>
     <main>
         <section id="pantallaPrincipal">
-            <label for="Ingrcontrasenha" class="texto"><strong>INGRESE CONTRASEÑA:</strong></label>
-            <br>
-            <img class="imagencand" src="img/contraseña.png" />
-            <input type="password" id="contrasenha" placeholder="Password" size="20" maxlength="50">
-            <br>
-            <div id="ventanaContrasenhaInco" class="ventanaError">
-            </div>
-            <button class="botonIngreso" type="button" id="botonIngresar">INGRESAR</button>
+            <div class="formContrasenha">
+                <table>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <label for="Ingrcontrasenha" class="texto"><strong>INGRESE CONTRASEÑA:</strong></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;"><img class="imagencand" src="img/contraseña.png" /></td>
+                        <td style="text-align:center;">
+                            <input type="password" class="inputText" id="contrasenha" placeholder="Password" size="20" maxlength="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <div id="ventanaContrasenhaInco" class="ventanaError">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;"><br>
+                        <button class="botonIngreso" type="button" id="botonIngresar">INGRESAR</button>
+                        </td>
+                    </tr>
+                </table>
+        </div>
         </section>
         <section id="pantallaError" class="hide">
             <table style="margin: 0 auto;">
@@ -56,7 +75,7 @@
                             <textarea id="textoDC" placeholder="Ingrese aquí su texto..." rows="20" cols="30"></textarea>
                         </td>
                         <td style="text-align:center;">
-                            <pre class="texto">      Por favor, elige una opción:     </pre>
+                            <pre class="texto"><strong>      Por favor, elige una opción:     </strong></pre>
                             <br>
                             <button class="botonDC" type="button" id="botonCifrar">CIFRAR</button>
                             <img class="imagencand2" src="img/candadoCerrado.png" /><br>
@@ -67,9 +86,10 @@
                         <td>
                             <textarea id="resultadoDC" placeholder="Aquí se mostrará su resultado..." rows="20" cols="30"></textarea>
                         </td>
+                        <td style="text-align:center;"><button type="button" id="botonCopiar" class="em em-clipboard"></button></td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="texto">Ingrese Clave Secreta:</td>
+                        <td colspan="3" class="texto"><strong>Ingrese Clave Secreta:</strong></td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -80,15 +100,15 @@
                         <td style="text-align:center;"><button class="botonLimpiar" type="button" id="botonLimpiar">LIMPIAR</button></td>
                     </tr>
                     <tr>
+                        <!--<button class="botonLimpiar" type="button" id="botonPegar">PEGAR</button>-->
                         <td colspan="3" style="text-align:center;"><button class="botonIngreso" type="button" id="botonSalir">SALIR</button></td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
-    <footer class="byZS">by Zaida Kary Sales</footer>
+    <footer>by Zaida Kary Sales</footer>
     <script type="text/javascript" src="cipher.js"></script>
     <script src="index.js"></script>
 </body>
-
 </html>
