@@ -20,11 +20,13 @@ body{
     height: 250px;
     display:block;
     margin:auto;
-    margin-bottom: 30px;
+    margin-bottom: 54px;
 }
 .imagencand {
     width: 45px;
     height: 45px;
+    float: left;
+    padding-top: 40px;
 }
 .imagencand2 {
     width: 30px;
@@ -47,7 +49,7 @@ body{
                                       rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
-    margin-bottom: 70px;
+    margin-top: 30px;
 }
 
 .botonIngreso:hover {
@@ -110,6 +112,9 @@ textarea {
     font-size:17px;
     font-family: 'Roboto Condensed', sans-serif;
 }
+.textoError {
+    
+}
 .mensajeError {
     font-size:25px;
     font-family: cursive;
@@ -152,7 +157,7 @@ input[type=number] {
     height: 260px;
     box-sizing: border-box;
     background: rgb(0, 0,0, 0.5);
-    padding: 40px;
+    padding: 32px;
     border-radius: 20px;
     font-size: 17px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -164,3 +169,14 @@ background-color: rgba(7, 7, 0, 0.911);
 width: 40px;
 height: 40px;
 }
+/*Display Flex*/
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }

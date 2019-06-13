@@ -19,92 +19,44 @@
     <main>
         <section id="pantallaPrincipal">
             <div class="formContrasenha">
-                <table>
-                    <tr>
-                        <td colspan="2" style="text-align:center;">
-                            <label for="Ingrcontrasenha" class="texto"><strong>INGRESE CONTRASEÑA:</strong></label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:center;"><img class="imagencand" src="img/contraseña.png" /></td>
-                        <td style="text-align:center;">
-                            <input type="password" class="inputText" id="contrasenha" placeholder="Password" size="20" maxlength="50">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align:center;">
-                            <div id="ventanaContrasenhaInco" class="ventanaError">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align:center;"><br>
+                <label for="Ingrcontrasenha" class="texto"><strong>INGRESE CONTRASEÑA:</strong></label>
+                <img class="imagencand" src="img/contraseña.png" />   
+                <input type="password" class="inputText" id="contrasenha" placeholder="Password" size="25" maxlength="50">
+                    <div id="ventanaContrasenhaInco" class="ventanaError">
+                    </div>
                         <button class="botonIngreso" type="button" id="botonIngresar">INGRESAR</button>
-                        </td>
-                    </tr>
-                </table>
-        </div>
+            </div>
         </section>
-        <section id="pantallaError" class="hide">
-            <table style="margin: 0 auto;">
-                <tr>
-                    <td style="text-align:left;" class="mensajeError">
+        <section id="pantallaError" class="hide mensajeError">
+            <div class="textoError">
                         Upss!!!...Tercer intento incorrecto!!!<br>
                         Ya utilizaste todos tus intentos, en este momento<br>
                         no podras ingresar a <strong>DescripGame.</strong><br>
                         Vuelve a intentarlo más rato.
-                    </td>
-                </tr>
-            </table>
+            </div>
             <img class="imagenTriste" src="img/triste.png" />
         </section>
-        <section id="pantallaSecundaria" class="hide">
+        <section id="pantallaSecundaria" class="hide texto">
             <h2>Bienvenid@!!!<br>
                 Empecemos a revelar mensajes secretos ocultos.<br>
             </h2>
-            <table style="margin: 0 auto;">
-                <thead>
-                    <tr>
-                        <th colspan="2" style="text-align:left;" class="texto">TEXTO:</th>
-                        <th style="text-align:left;" class="texto">RESULTADO:</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <textarea id="textoDC" placeholder="Ingrese aquí su texto..." rows="20" cols="30"></textarea>
-                        </td>
-                        <td style="text-align:center;">
-                            <pre class="texto"><strong>      Por favor, elige una opción:     </strong></pre>
-                            <br>
-                            <button class="botonDC" type="button" id="botonCifrar">CIFRAR</button>
-                            <img class="imagencand2" src="img/candadoCerrado.png" /><br>
-                            <br><br>
-                            <button class="botonDC" type="button" id="botonDescifrar">DESCIFRAR</button>
-                            <img class="imagencand2" src="img/candadoAbierto.png" />
-                        </td>
-                        <td>
-                            <textarea id="resultadoDC" placeholder="Aquí se mostrará su resultado..." rows="20" cols="30"></textarea>
-                        </td>
-                        <td style="text-align:center;"><button type="button" id="botonCopiar" class="em em-clipboard"></button></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" class="texto"><strong>Ingrese Clave Secreta:</strong></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <img class="imagencand2" src="img/clave.png" />
-                            <input type="number" id="clave" placeholder="3" size="7" pattern="[1-9]{1,10}" title="Una clave de seguridad válido consiste en una cadena con 1 a 10 dígitos, cada uno de los cuales es un dígito"
-                                required>
-                        </td>
-                        <td style="text-align:center;"><button class="botonLimpiar" type="button" id="botonLimpiar">LIMPIAR</button></td>
-                    </tr>
-                    <tr>
-                        <!--<button class="botonLimpiar" type="button" id="botonPegar">PEGAR</button>-->
-                        <td colspan="3" style="text-align:center;"><button class="botonIngreso" type="button" id="botonSalir">SALIR</button></td>
-                    </tr>
-                </tbody>
-            </table>
+                TEXTO:
+                RESULTADO:
+                <textarea id="textoDC" placeholder="Ingrese aquí su texto..." rows="20" cols="30"></textarea>
+                <pre><strong>      Por favor, elige una opción:     </strong></pre>
+                <br>
+                <button class="botonDC" type="button" id="botonCifrar">CIFRAR</button>
+                <img class="imagencand2" src="img/candadoCerrado.png" /><br>
+                <button class="botonDC" type="button" id="botonDescifrar">DESCIFRAR</button>
+                <img class="imagencand2" src="img/candadoAbierto.png" />
+                <textarea id="resultadoDC" placeholder="Aquí se mostrará su resultado..." rows="20" cols="30"></textarea>
+                <button type="button" id="botonCopiar" class="em em-clipboard"></button>
+                <strong>Ingrese Clave Secreta:</strong>
+                <img class="imagencand2" src="img/clave.png" />
+                <input type="number" id="clave" placeholder="3" size="7" pattern="[1-9]{1,10}" title="Una clave de seguridad válido consiste en una cadena con 1 a 10 dígitos, cada uno de los cuales es un dígito" required>
+                <button class="botonLimpiar" type="button" id="botonLimpiar">LIMPIAR</button>
+                <!--<button class="botonLimpiar" type="button" id="botonPegar">PEGAR</button>-->
+                <button class="botonIngreso" type="button" id="botonSalir">SALIR</button>
         </section>
     </main>
     <footer>by Zaida Kary Sales</footer>
