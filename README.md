@@ -26,9 +26,15 @@ El proyecto de cifrar y descifrar textos se desarrolla en un contexto de un jueg
 
 ### Pantalla Principal
 
+![image](https://user-images.githubusercontent.com/42952494/59464150-47a0d900-8ded-11e9-998b-15fb6dfdc452.png)
+
 ### Pantalla de Error en Contraseña
 
+![image](https://user-images.githubusercontent.com/42952494/59464229-7f0f8580-8ded-11e9-81e1-e6eb8d9806ef.png)
+
 ### Pantalla Secundaria
+
+![image](https://user-images.githubusercontent.com/42952494/59465141-d57dc380-8def-11e9-80f2-ae1022b20b3e.png)
 
 ## Investigación UX
 
