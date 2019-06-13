@@ -19,23 +19,45 @@
     <main>
         <section id="pantallaPrincipal">
             <div class="formContrasenha">
-                <label for="Ingrcontrasenha" class="texto"><strong>INGRESE CONTRASEÑA:</strong></label>
-                <img class="imagencand" src="img/contraseña.png" />   
-                <input type="password" class="inputText" id="contrasenha" placeholder="Password" size="25" maxlength="50">
-                    <div id="ventanaContrasenhaInco" class="ventanaError">
-                    </div>
+                <table>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <label for="Ingrcontrasenha" class="texto"><strong>INGRESE CONTRASEÑA:</strong></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;"><img class="imagencand" src="img/contraseña.png" /></td>
+                        <td style="text-align:center;">
+                            <input type="password" class="inputText" id="contrasenha" placeholder="Password" size="20" maxlength="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <div id="ventanaContrasenhaInco" class="ventanaError">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;"><br>
                         <button class="botonIngreso" type="button" id="botonIngresar">INGRESAR</button>
-            </div>
-        </section>
-        <section id="pantallaError" class="hide mensajeError">
-            <div class="textoError">
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        </section> 
+        <section id="pantallaError" class="hide">
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td style="text-align:left;" class="mensajeError">
                         Upss!!!...Tercer intento incorrecto!!!<br>
                         Ya utilizaste todos tus intentos, en este momento<br>
                         no podras ingresar a <strong>DescripGame.</strong><br>
                         Vuelve a intentarlo más rato.
-            </div>
+                    </td>
+                </tr>
+            </table>
             <img class="imagenTriste" src="img/triste.png" />
-        </section>
+        </section> 
         <section id="pantallaSecundaria" class="hide texto">
             <h2>Bienvenid@!!!<br>
                 Empecemos a revelar mensajes secretos ocultos.<br>
