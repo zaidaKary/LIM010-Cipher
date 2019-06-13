@@ -7,9 +7,13 @@ window.cipher = {
             resultado += String.fromCharCode((numLetraAscii - 65 + offset) % 26 + 65);  
         } else if (97 <= numLetraAscii && numLetraAscii <= 122){ //código ascii para las minúsculas
             resultado += String.fromCharCode((numLetraAscii - 97 + offset) % 26 + 97);  
-        } else{
-            resultado += string.charAt(i); //devuelve el mismo valor introducido, si es espacio 
-        //o número, es el mismo valor.
+        } else if (48 <= numLetraAscii && numLetraAscii <= 57){ //código ascii para las minúsculas
+          resultado += String.fromCharCode((numLetraAscii - 48 + offset) % 10 + 48);  
+        } else if (numLetraAscii === 32){
+          resultado += " ";
+        }
+         else{
+          break;
         }
       }
     return resultado;
@@ -22,8 +26,13 @@ window.cipher = {
             resultado += String.fromCharCode((numLetraAscii - 13 - offset) % 26 + 65);  
         } else if (97 <= numLetraAscii && numLetraAscii <= 122){ //código ascii para las minúsculas
             resultado += String.fromCharCode((numLetraAscii - 45 - offset) % 26 + 97);  
-        } else{
-            resultado += string.charAt(i);  
+        } else if (48 <= numLetraAscii && numLetraAscii <= 57){ //código ascii para las minúsculas
+            resultado += String.fromCharCode((numLetraAscii - 4 + offset) % 10 + 48);  
+        } else if (numLetraAscii === 32){
+            resultado += " ";
+        } 
+         else{
+            break;  
         }
       }
     return resultado;
