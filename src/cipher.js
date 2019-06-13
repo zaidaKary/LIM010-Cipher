@@ -5,6 +5,8 @@ window.cipher = {
         let numLetraAscii = string.charCodeAt(i);
         if (65 <= numLetraAscii && numLetraAscii <=  90){ //código ascii para las mayúsculas
             resultado += String.fromCharCode((numLetraAscii - 65 + offset) % 26 + 65);  
+        } else if (97 <= numLetraAscii && numLetraAscii <= 122){ //código ascii para las minúsculas
+          resultado += String.fromCharCode((numLetraAscii - 97 + offset) % 26 + 97);  
         } else{
         resultado += string.charAt(i); //devuelve el mismo valor introducido, si es espacio 
         //o número, es el mismo valor.
